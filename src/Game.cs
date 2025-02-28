@@ -96,6 +96,9 @@ class Game
 			case "go":
 				GoRoom(command);
 				break;
+			case "look":
+				Console.WriteLine(currentRoom.GetLongDescription());
+				break;
 			case "quit":
 				wantToQuit = true;
 				break;
